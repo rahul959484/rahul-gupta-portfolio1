@@ -58,14 +58,37 @@ const projects = [
     url: 'https://www.stayatlas.in/',
   },
   {
-    id: 'edubook',
+    id: 'doc-converter',
     index: '04',
-    name: 'EduBook',
-    type: 'Academic advising system',
+    name: 'Doc Converter',
+    type: 'Private document toolkit',
     description:
-      'A focused system for making academic guidance easier to navigate, with a product surface that keeps the important decision in view.',
+      'A privacy-first workspace with 21 document tools for converting, merging, splitting, compressing, signing, repairing, and organizing files locally.',
+    stack: ['React.js', 'PDF workflows', 'Local-first UX'],
+    tone: 'cobalt',
+    url: 'https://doc-converter-sigma.vercel.app/',
+  },
+  {
+    id: 'kashvi-app',
+    index: '05',
+    name: 'Kashvi Communications',
+    type: '360° marketing services app',
+    description:
+      'A mobile companion for a full-service advertising agency, making its branding, digital marketing, web, production, events, and inquiry services easy to explore.',
+    stack: ['Android', 'Service discovery', 'Inquiry flow'],
+    tone: 'coral',
+    url: 'https://apkpure.net/kashvi-communications/com.example.kashvi',
+  },
+  {
+    id: 'edubook',
+    index: '06',
+    name: 'EduBook',
+    type: 'Student–teacher booking platform',
+    description:
+      'A modern appointment system that connects students and teachers through booking, schedules, notifications, messaging, and academic coordination.',
     stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
     tone: 'cobalt',
+    url: 'https://student-teacher-booking.vercel.app/',
   },
 ];
 
@@ -205,9 +228,14 @@ function Portfolio() {
               <span className="text-[#17203f]">clearly.</span>
             </h1>
             <p className="reveal reveal-2 mt-10 max-w-xl text-lg leading-relaxed text-[#17203f]/70 sm:text-xl">
-              I&apos;m Rahul — a JavaScript-focused engineer who turns complex systems into clear, useful products.
-              Currently building full-stack experiences at <strong className="font-semibold text-[#17203f]">Kashvi Communications</strong>.
+              I&apos;m Rahul — a product-minded full-stack developer who takes ideas from first interface to shipped experience.
+              I build clear, responsive products with JavaScript, React, Node.js, and modern web tooling — currently at <strong className="font-semibold text-[#17203f]">Kashvi Communications</strong>.
             </p>
+            <div className="reveal reveal-2 mt-6 flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-[.12em] text-[#17203f]/55">
+              <span>6 live builds</span>
+              <span>Frontend to infrastructure</span>
+              <span>Built in Mumbai</span>
+            </div>
             <div className="reveal reveal-3 mt-9 flex flex-wrap items-center gap-3">
               <button
                 type="button"
@@ -231,10 +259,10 @@ function Portfolio() {
             <div className="ml-auto max-w-sm border-l-2 border-[#f0784f] pl-5">
               <p className="mono-font text-[11px] uppercase tracking-[.14em] text-[#17203f]/55">A note from the desk</p>
               <p className="mt-4 text-2xl font-semibold leading-tight tracking-[-.04em]">
-                Good engineering leaves people with less to think about.
+                 From first idea to live product.
               </p>
               <p className="mt-5 text-sm leading-relaxed text-[#17203f]/60">
-                From the first interaction to the last deployment, I care about the connective tissue that makes a product feel obvious.
+                 I care about the connective tissue that makes a product feel trustworthy: clear flows, useful details, and dependable delivery.
               </p>
             </div>
             <div className="drift absolute -bottom-4 right-0 hidden h-16 w-16 rotate-12 bg-[#b9f3ee] p-2 text-center text-[10px] font-bold uppercase leading-tight text-[#17203f] sm:block">
@@ -287,7 +315,7 @@ function Portfolio() {
             <p className="mono-font text-xs uppercase tracking-[.18em] text-[#087f8f]">02 / Selected work</p>
             <h2 className="display-font mt-5 text-6xl font-semibold leading-none sm:text-8xl">Made to matter.</h2>
           </div>
-           <p className="max-w-xs text-sm leading-relaxed text-[#17203f]/60">Four products across communities, engineering, travel, and education — all shaped around making the useful thing easier to find.</p>
+           <p className="max-w-xs text-sm leading-relaxed text-[#17203f]/60">Six live builds across communities, engineering, travel, documents, marketing, and education — each one shaped around a real user need.</p>
         </div>
 
         <div className="mt-14 grid gap-8 lg:grid-cols-2">
