@@ -1,0 +1,52 @@
+--- PAGE 1 ---
+Rahul Gupta
+H +91 9594884323 | # rahulgupta959484@gmail.com | § rahul959484 | ï rahul-gupta-b3569231a
+Objective
+JavaScript-focused Full Stack Developer with hands-on experience in building scalable and responsive web
+applications using React.js, Node.js, and modern web technologies. Skilled in developing high-performance
+user-centric solutions with strong problem-solving and collaboration abilities.
+Skills
+• Programming Languages: JavaScript, Java, C/C++
+• Frontend: HTML5, CSS3, Tailwind CSS, JavaScript, React.js
+• Backend: Node.js, Express.js
+• Databases: MongoDB, PostgreSQL
+• DevOps & Cloud: Git/GitHub, Docker, GitHub Actions, AWS (EC2, S3, VPC, Route 53)
+• Tools & APIs: REST APIs, Socket.IO, Postman, Render
+• Core Concepts: JWT Authentication, CRUD Operations, API Integration, CI/CD, Deployment
+• Soft Skills: Problem Solving, Team Collaboration, Communication
+Education
+Shree L.R Tiwari College of Engineering, Mumbai
+Nov 2022 - May 2026
+Bachelor of Engineering in Computer Engineering
+Average CGPA: 8.17
+Projects
+EduBook– Academic Advising System
+Nov 2023 – May 2024
+• Tools: HTML, CSS, JavaScript, Node.js, Firebase, MongoDB
+• A web-based platform designed to streamline the interaction between students and academic advisors.
+• Features include student profile management, advisor-student meeting scheduling, and real-time academic
+progress tracking.
+StayAtlas – Luxury Villa Booking Platform
+Sep 2025 – April 2026
+• Developed full-stack booking features using HTML5, CSS3, JavaScript, Node.js, and Express.js
+• Integrated REST APIs, authentication, dynamic data rendering, and database operations using Post-
+greSQL
+• Deployed and optimized application on AWS (EC2, S3, Route53), improving performance, scalability,
+and availability
+Professional Experience
+Frontend Developer Intern - Fifth Quarter Infomedia PVT.LTD
+June 2024 – Sep 2025
+• Developed scalable and responsive web interfaces using HTML5, CSS3, and JavaScript, ensuring cross-
+browser compatibility.
+• Built interactive UI components, optimized frontend performance, and resolved bugs to enhance user expe-
+rience and application stability
+Full Stack Developer – Kashvi Communications
+Nov 2025 – Present
+• Developing responsive web applications using HTML5, CSS3, JavaScript, Node.js, and Express.js
+• Handling API integration, database operations with MongoDB/PostgreSQL, and performance opti-
+mization for production deployments
+Certifications
+Software Developer Intern –Fifth Quarter Infomedia PVT.LTD
+Issued Sep 2025
+Honor Degree: Awarded the opportunity by my college to pursue an Honors specialization in Data Science
+concurrently with my major degree.
