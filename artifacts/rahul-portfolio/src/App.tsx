@@ -25,24 +25,47 @@ const queryClient = new QueryClient();
 
 const projects = [
   {
-    id: 'edubook',
+    id: 'bombay-mathurs',
     index: '01',
+    name: 'Bombay Mathurs',
+    type: 'Community platform & member directory',
+    description:
+      'A digital home for Mathur Association Bombay, bringing together member directories, zonal information, management, newsletters, events, and articles.',
+    stack: ['Responsive UI', 'Member directory', 'Content platform'],
+    tone: 'coral',
+    url: 'https://www.bombaymathurs.com/',
+  },
+  {
+    id: 'nexiom',
+    index: '02',
+    name: 'Nexiom',
+    type: 'Advanced engineering consultancy',
+    description:
+      'A future-ready engineering presence for advanced manufacturing, connecting strategy, design, project delivery, and regulated industry expertise.',
+    stack: ['Corporate web', 'Sector navigation', 'Responsive UI'],
+    tone: 'cobalt',
+    url: 'https://nexiom.in/',
+  },
+  {
+    id: 'stayatlas',
+    index: '03',
+    name: 'StayAtlas',
+    type: 'Luxury villa booking platform',
+    description:
+      'A full-stack booking experience for discovering and reserving luxury villas, with destination browsing, property details, search, authentication, and database operations.',
+    stack: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL'],
+    tone: 'coral',
+    url: 'https://www.stayatlas.in/',
+  },
+  {
+    id: 'edubook',
+    index: '04',
     name: 'EduBook',
     type: 'Academic advising system',
     description:
       'A focused system for making academic guidance easier to navigate, with a product surface that keeps the important decision in view.',
     stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
     tone: 'cobalt',
-  },
-  {
-    id: 'stayatlas',
-    index: '02',
-    name: 'StayAtlas',
-    type: 'Luxury villa booking platform',
-    description:
-      'A considered booking experience for discovering and reserving high-end stays without burying the useful details.',
-    stack: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL'],
-    tone: 'coral',
   },
 ];
 
@@ -264,7 +287,7 @@ function Portfolio() {
             <p className="mono-font text-xs uppercase tracking-[.18em] text-[#087f8f]">02 / Selected work</p>
             <h2 className="display-font mt-5 text-6xl font-semibold leading-none sm:text-8xl">Made to matter.</h2>
           </div>
-          <p className="max-w-xs text-sm leading-relaxed text-[#17203f]/60">Two products, different domains, one recurring question: how do we make the useful thing easier to find?</p>
+           <p className="max-w-xs text-sm leading-relaxed text-[#17203f]/60">Four products across communities, engineering, travel, and education — all shaped around making the useful thing easier to find.</p>
         </div>
 
         <div className="mt-14 grid gap-8 lg:grid-cols-2">
@@ -279,9 +302,22 @@ function Portfolio() {
               >
                 <div className="flex items-start justify-between">
                   <span className="mono-font text-xs opacity-70">{project.index}</span>
-                  <span className="flex h-10 w-10 items-center justify-center border border-current/30">
-                    <ArrowUpRight className="project-arrow" size={18} />
-                  </span>
+                   {project.url ? (
+                     <a
+                       href={project.url}
+                       target="_blank"
+                       rel="noreferrer"
+                       aria-label={`Open ${project.name} live site`}
+                       className="focus-ring flex h-10 w-10 items-center justify-center border border-current/30 transition-transform hover:-translate-y-1"
+                       data-testid={`link-project-${project.id}`}
+                     >
+                       <ArrowUpRight className="project-arrow" size={18} />
+                     </a>
+                   ) : (
+                     <span className="flex h-10 w-10 items-center justify-center border border-current/30">
+                       <ArrowUpRight className="project-arrow" size={18} />
+                     </span>
+                   )}
                 </div>
                 <div className="mt-24 sm:mt-32">
                   <p className="mono-font text-xs uppercase tracking-[.14em] opacity-70">{project.type}</p>
@@ -293,15 +329,28 @@ function Portfolio() {
                     <span key={tech} className="border border-current/25 px-2.5 py-1.5 text-xs font-semibold">{tech}</span>
                   ))}
                 </div>
-                <button
-                  type="button"
-                  onClick={() => setActiveProject(isOpen ? null : project.id)}
-                  className="focus-ring mt-8 flex items-center gap-2 text-sm font-bold"
-                  aria-expanded={isOpen}
-                  data-testid={`button-project-details-${project.id}`}
-                >
-                  {isOpen ? 'Close project note' : 'Open project note'} <ChevronDown size={16} className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
-                </button>
+                 <div className="mt-8 flex flex-wrap items-center gap-5">
+                   {project.url && (
+                     <a
+                       href={project.url}
+                       target="_blank"
+                       rel="noreferrer"
+                       className="focus-ring inline-flex items-center gap-2 border-b border-current/40 pb-1 text-sm font-bold"
+                       data-testid={`link-project-visit-${project.id}`}
+                     >
+                       Visit live site <ArrowUpRight size={15} />
+                     </a>
+                   )}
+                   <button
+                     type="button"
+                     onClick={() => setActiveProject(isOpen ? null : project.id)}
+                     className="focus-ring flex items-center gap-2 text-sm font-bold"
+                     aria-expanded={isOpen}
+                     data-testid={`button-project-details-${project.id}`}
+                   >
+                     {isOpen ? 'Close project note' : 'Open project note'} <ChevronDown size={16} className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                   </button>
+                 </div>
                 {isOpen && (
                   <div className="mt-5 border-t border-current/25 pt-5 text-sm leading-relaxed opacity-80" data-testid={`text-project-note-${project.id}`}>
                     A featured case study from Rahul&apos;s portfolio. Reach out directly for the implementation details and walkthrough.
@@ -418,6 +467,15 @@ function Portfolio() {
                   <Linkedin size={16} /> LinkedIn
                 </a>
               </div>
+               <a
+                 href="https://rahul-gupta-portfolio-8zlk.vercel.app/"
+                 target="_blank"
+                 rel="noreferrer"
+                 className="link-underline focus-ring mt-7 inline-flex items-center gap-2 text-sm font-bold"
+                 data-testid="link-previous-portfolio"
+               >
+                 View previous portfolio <ArrowUpRight size={15} />
+               </a>
             </div>
           </div>
           <footer className="mt-24 flex flex-col gap-4 border-t border-[#17203f]/25 pt-5 text-xs font-semibold uppercase tracking-[.1em] text-[#17203f]/60 sm:flex-row sm:items-center sm:justify-between">
